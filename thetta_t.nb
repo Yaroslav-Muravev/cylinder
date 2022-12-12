@@ -1,0 +1,1311 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     49436,       1303]
+NotebookOptionsPosition[     46975,       1257]
+NotebookOutlinePosition[     47368,       1273]
+CellTagsIndexPosition[     47325,       1270]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"1", "/", 
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Cos", "[", "x", "]"}], " ", "+", " ", "a"}], " ", ")"}], 
+      "]"}]}], ",", " ", "x"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.879336204673217*^9, 3.879336285327824*^9}, {
+  3.879352508738263*^9, 3.879352510214744*^9}, {3.879765611725175*^9, 
+  3.879765617327667*^9}, {3.8797656590691566`*^9, 3.879765668156896*^9}, {
+  3.8797657142880898`*^9, 3.879765729930667*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"174e4d0f-b3aa-4bab-a5be-7ac7b2629318"],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", 
+   SqrtBox[
+    FractionBox[
+     RowBox[{"a", "+", 
+      RowBox[{"Cos", "[", "x", "]"}]}], 
+     RowBox[{"1", "+", "a"}]]], " ", 
+   RowBox[{"EllipticF", "[", 
+    RowBox[{
+     FractionBox["x", "2"], ",", 
+     FractionBox["2", 
+      RowBox[{"1", "+", "a"}]]}], "]"}]}], 
+  SqrtBox[
+   RowBox[{"a", "+", 
+    RowBox[{"Cos", "[", "x", "]"}]}]]]], "Output",
+ CellChangeTimes->{3.87976573090546*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"b7d392f6-8db3-44fa-8dd6-245e99d808a1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"2", " ", 
+       SqrtBox[
+        FractionBox[
+         RowBox[{"a", "+", 
+          RowBox[{"Cos", "[", "x", "]"}]}], 
+         RowBox[{"1", "+", "a"}]]], " ", 
+       RowBox[{"EllipticF", "[", 
+        RowBox[{
+         FractionBox["x", "2"], ",", 
+         FractionBox["2", 
+          RowBox[{"1", "+", "a"}]]}], "]"}]}], 
+      SqrtBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}]]], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "8"}], ",", "8"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"-", "8"}], ",", "8"}], "}"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[3]:=",ExpressionUUID->"ffdb8280-2dc7-4a93-9ad2-c68b6ab3033e"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   StyleBox[
+    DynamicModuleBox[{$CellContext`a$$ = 1.0199999999999996`, Typeset`show$$ =
+      True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+     "\"untitled\"", Typeset`specs$$ = {{
+       Hold[$CellContext`a$$], -8, 8}}, Typeset`size$$ = {
+     360., {109., 113.87420196121226`}}, Typeset`update$$ = 0, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+     DynamicBox[Manipulate`ManipulateBoxes[
+      1, StandardForm, "Variables" :> {$CellContext`a$$ = -8}, 
+       "ControllerVariables" :> {}, 
+       "OtherVariables" :> {
+        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+         Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+         Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+       Plot[(2 Sqrt[($CellContext`a$$ + Cos[$CellContext`x])/(
+            1 + $CellContext`a$$)]) (
+          EllipticF[$CellContext`x/2, 2/(1 + $CellContext`a$$)]/
+          Sqrt[$CellContext`a$$ + Cos[$CellContext`x]]), {$CellContext`x, -8, 
+          8}], "Specifications" :> {{$CellContext`a$$, -8, 8}}, 
+       "Options" :> {}, "DefaultOptions" :> {}],
+      ImageSizeCache->{406., {153.1875, 158.8125}},
+      SingleEvaluation->True],
+     Deinitialization:>None,
+     DynamicModuleValues:>{},
+     SynchronousInitialization->True,
+     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+     UnsavedVariables:>{Typeset`initDone$$},
+     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+    Deployed->True,
+    StripOnInput->False],
+   Manipulate`InterpretManipulate[1]], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8797654535262003`*^9, 
+  3.879765576173685*^9}},ExpressionUUID->"e7ced377-a4e2-47e1-97db-\
+d848be55a142"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8793364263909483`*^9, 3.879336432289255*^9}, {
+  3.879767331496662*^9, 3.879767367595986*^9}},
+ CellLabel->"",ExpressionUUID->"867756fe-b3ec-4dda-b8d5-dadaf5bb4ccd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"P", "[", 
+   RowBox[{"x_", ",", " ", "a_"}], "]"}], " ", ":=", " ", 
+  FractionBox[
+   RowBox[{"2", " ", 
+    SqrtBox[
+     FractionBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}], 
+      RowBox[{"1", "+", "a"}]]], " ", 
+    RowBox[{"EllipticF", "[", 
+     RowBox[{
+      FractionBox["x", "2"], ",", 
+      FractionBox["2", 
+       RowBox[{"1", "+", "a"}]]}], "]"}]}], 
+   SqrtBox[
+    RowBox[{"a", "+", 
+     RowBox[{"Cos", "[", "x", "]"}]}]]]}]], "Input",
+ CellChangeTimes->{{3.879765747747882*^9, 3.879765779796171*^9}, {
+  3.8797674429049387`*^9, 
+  3.8797674525648603`*^9}},ExpressionUUID->"b9bfecc4-f039-4bd2-8fb7-\
+0b728c07068a"],
+
+Cell[BoxData[
+ RowBox[{"1", "/", 
+  RowBox[{"D", "[", 
+   RowBox[{
+    RowBox[{"P", "[", 
+     RowBox[{"x", ",", " ", "a"}], "]"}], ",", " ", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.879765794871241*^9, 3.8797658399198313`*^9}, {
+  3.879766604876954*^9, 3.879766651479601*^9}, {3.8797674463320503`*^9, 
+  3.879767456487341*^9}, {3.879767488227645*^9, 3.879767524808814*^9}, {
+  3.879767559507201*^9, 
+  3.879767561333007*^9}},ExpressionUUID->"a44989af-0035-4e36-b485-\
+64cc194d179c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ FractionBox["1", 
+  RowBox[{
+   FractionBox[
+    SqrtBox[
+     FractionBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}], 
+      RowBox[{"1", "+", "a"}]]], 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+     SqrtBox[
+      RowBox[{"1", "-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         SuperscriptBox[
+          RowBox[{"Sin", "[", 
+           FractionBox["x", "2"], "]"}], "2"]}], 
+        RowBox[{"1", "+", "a"}]]}]]}]], "-", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"EllipticF", "[", 
+      RowBox[{
+       FractionBox["x", "2"], ",", 
+       FractionBox["2", 
+        RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+     RowBox[{"Sin", "[", "x", "]"}]}], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "a"}], ")"}], " ", 
+     SqrtBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], 
+       RowBox[{"1", "+", "a"}]]]}]], "+", 
+   FractionBox[
+    RowBox[{
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], 
+       RowBox[{"1", "+", "a"}]]], " ", 
+     RowBox[{"EllipticF", "[", 
+      RowBox[{
+       FractionBox["x", "2"], ",", 
+       FractionBox["2", 
+        RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+     RowBox[{"Sin", "[", "x", "]"}]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]]}]], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"W", "[", 
+   RowBox[{"x_", ",", " ", "a_"}], "]"}], ":=", " ", 
+  FractionBox["1", 
+   RowBox[{
+    FractionBox[
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], 
+       RowBox[{"1", "+", "a"}]]], 
+     RowBox[{
+      SqrtBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+      SqrtBox[
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"Sin", "[", 
+            FractionBox["x", "2"], "]"}], "2"]}], 
+         RowBox[{"1", "+", "a"}]]}]]}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"EllipticF", "[", 
+       RowBox[{
+        FractionBox["x", "2"], ",", 
+        FractionBox["2", 
+         RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", "a"}], ")"}], " ", 
+      SqrtBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+      SqrtBox[
+       FractionBox[
+        RowBox[{"a", "+", 
+         RowBox[{"Cos", "[", "x", "]"}]}], 
+        RowBox[{"1", "+", "a"}]]]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SqrtBox[
+       FractionBox[
+        RowBox[{"a", "+", 
+         RowBox[{"Cos", "[", "x", "]"}]}], 
+        RowBox[{"1", "+", "a"}]]], " ", 
+      RowBox[{"EllipticF", "[", 
+       RowBox[{
+        FractionBox["x", "2"], ",", 
+        FractionBox["2", 
+         RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+      RowBox[{"Sin", "[", "x", "]"}]}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], ")"}], 
+      RowBox[{"3", "/", "2"}]]]}]]}]}], "Input",
+ CellChangeTimes->{{3.8797675650067377`*^9, 3.8797675797346277`*^9}, {
+  3.879768141700238*^9, 3.8797681874679956`*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"62605d4d-4722-4c89-a706-6857dd2d2cd4"],
+
+Cell[BoxData[
+ FractionBox["1", 
+  RowBox[{
+   FractionBox[
+    SqrtBox[
+     FractionBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}], 
+      RowBox[{"1", "+", "a"}]]], 
+    RowBox[{
+     SqrtBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+     SqrtBox[
+      RowBox[{"1", "-", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         SuperscriptBox[
+          RowBox[{"Sin", "[", 
+           FractionBox["x", "2"], "]"}], "2"]}], 
+        RowBox[{"1", "+", "a"}]]}]]}]], "-", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"EllipticF", "[", 
+      RowBox[{
+       FractionBox["x", "2"], ",", 
+       FractionBox["2", 
+        RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+     RowBox[{"Sin", "[", "x", "]"}]}], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "+", "a"}], ")"}], " ", 
+     SqrtBox[
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}]], " ", 
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], 
+       RowBox[{"1", "+", "a"}]]]}]], "+", 
+   FractionBox[
+    RowBox[{
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", "x", "]"}]}], 
+       RowBox[{"1", "+", "a"}]]], " ", 
+     RowBox[{"EllipticF", "[", 
+      RowBox[{
+       FractionBox["x", "2"], ",", 
+       FractionBox["2", 
+        RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+     RowBox[{"Sin", "[", "x", "]"}]}], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"a", "+", 
+       RowBox[{"Cos", "[", "x", "]"}]}], ")"}], 
+     RowBox[{"3", "/", "2"}]]]}]]], "Output",
+ CellChangeTimes->{{3.879768164543756*^9, 3.8797681883991213`*^9}},
+ CellLabel->"Out[53]=",ExpressionUUID->"f44705b7-db7b-492f-b076-88be18c412e3"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.879767573196307*^9, 
+  3.879767573897307*^9}},ExpressionUUID->"c07daab3-0890-45b3-9a3b-\
+276ede164080"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"W", "[", 
+  RowBox[{
+   RowBox[{"P", "[", 
+    RowBox[{"x_", ",", " ", "a_"}], "]"}], ",", " ", "a"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8797682004066973`*^9, 3.879768222319504*^9}, {
+  3.879768282373104*^9, 3.879768294946054*^9}, {3.879768337202338*^9, 
+  3.879768409116911*^9}, {3.879768448596752*^9, 3.879768451396645*^9}},
+ CellLabel->"",ExpressionUUID->"1ceb664b-846c-46d4-8bb1-9b467f314999"],
+
+Cell[BoxData[
+ RowBox[{"1", "/", 
+  RowBox[{"(", 
+   RowBox[{
+    FractionBox[
+     SqrtBox[
+      FractionBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"EllipticF", "[", 
+            RowBox[{
+             FractionBox["x_", "2"], ",", 
+             FractionBox["2", 
+              RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+           SqrtBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+             RowBox[{"1", "+", "a_"}]]]}], 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+       RowBox[{"1", "+", "a"}]]], 
+     RowBox[{
+      SqrtBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"EllipticF", "[", 
+            RowBox[{
+             FractionBox["x_", "2"], ",", 
+             FractionBox["2", 
+              RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+           SqrtBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+             RowBox[{"1", "+", "a_"}]]]}], 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}]], " ", 
+      SqrtBox[
+       RowBox[{"1", "-", 
+        FractionBox[
+         RowBox[{"2", " ", 
+          SuperscriptBox[
+           RowBox[{"Sin", "[", 
+            FractionBox[
+             RowBox[{
+              RowBox[{"EllipticF", "[", 
+               RowBox[{
+                FractionBox["x_", "2"], ",", 
+                FractionBox["2", 
+                 RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+              SqrtBox[
+               FractionBox[
+                RowBox[{
+                 RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                RowBox[{"1", "+", "a_"}]]]}], 
+             SqrtBox[
+              RowBox[{
+               RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}], "2"]}], 
+         
+         RowBox[{"1", "+", "a"}]]}]]}]], "-", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"EllipticF", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          RowBox[{"EllipticF", "[", 
+           RowBox[{
+            FractionBox["x_", "2"], ",", 
+            FractionBox["2", 
+             RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+          SqrtBox[
+           FractionBox[
+            RowBox[{
+             RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+            RowBox[{"1", "+", "a_"}]]]}], 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], ",", 
+        FractionBox["2", 
+         RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+      RowBox[{"Sin", "[", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"EllipticF", "[", 
+          RowBox[{
+           FractionBox["x_", "2"], ",", 
+           FractionBox["2", 
+            RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+         SqrtBox[
+          FractionBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+           RowBox[{"1", "+", "a_"}]]]}], 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", "a"}], ")"}], " ", 
+      SqrtBox[
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"EllipticF", "[", 
+            RowBox[{
+             FractionBox["x_", "2"], ",", 
+             FractionBox["2", 
+              RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+           SqrtBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+             RowBox[{"1", "+", "a_"}]]]}], 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}]], " ", 
+      SqrtBox[
+       FractionBox[
+        RowBox[{"a", "+", 
+         RowBox[{"Cos", "[", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"EllipticF", "[", 
+             RowBox[{
+              FractionBox["x_", "2"], ",", 
+              FractionBox["2", 
+               RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+            SqrtBox[
+             FractionBox[
+              RowBox[{
+               RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+              RowBox[{"1", "+", "a_"}]]]}], 
+           SqrtBox[
+            RowBox[{
+             RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+        RowBox[{"1", "+", "a"}]]]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SqrtBox[
+       FractionBox[
+        RowBox[{"a", "+", 
+         RowBox[{"Cos", "[", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"EllipticF", "[", 
+             RowBox[{
+              FractionBox["x_", "2"], ",", 
+              FractionBox["2", 
+               RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+            SqrtBox[
+             FractionBox[
+              RowBox[{
+               RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+              RowBox[{"1", "+", "a_"}]]]}], 
+           SqrtBox[
+            RowBox[{
+             RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+        RowBox[{"1", "+", "a"}]]], " ", 
+      RowBox[{"EllipticF", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          RowBox[{"EllipticF", "[", 
+           RowBox[{
+            FractionBox["x_", "2"], ",", 
+            FractionBox["2", 
+             RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+          SqrtBox[
+           FractionBox[
+            RowBox[{
+             RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+            RowBox[{"1", "+", "a_"}]]]}], 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], ",", 
+        FractionBox["2", 
+         RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+      RowBox[{"Sin", "[", 
+       FractionBox[
+        RowBox[{"2", " ", 
+         RowBox[{"EllipticF", "[", 
+          RowBox[{
+           FractionBox["x_", "2"], ",", 
+           FractionBox["2", 
+            RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+         SqrtBox[
+          FractionBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+           RowBox[{"1", "+", "a_"}]]]}], 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"a", "+", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"2", " ", 
+           RowBox[{"EllipticF", "[", 
+            RowBox[{
+             FractionBox["x_", "2"], ",", 
+             FractionBox["2", 
+              RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+           SqrtBox[
+            FractionBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+             RowBox[{"1", "+", "a_"}]]]}], 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], ")"}], 
+      RowBox[{"3", "/", "2"}]]]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.87976820655399*^9, 3.879768223781849*^9}},
+ CellLabel->"Out[56]=",ExpressionUUID->"5a1a56c5-d14c-4d43-9c33-aa21c6408a04"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"1", "/", 
+      RowBox[{"(", 
+       RowBox[{
+        FractionBox[
+         SqrtBox[
+          FractionBox[
+           RowBox[{"a", "+", 
+            RowBox[{"Cos", "[", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"EllipticF", "[", 
+                RowBox[{
+                 FractionBox["x_", "2"], ",", 
+                 FractionBox["2", 
+                  RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+               SqrtBox[
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                 RowBox[{"1", "+", "a_"}]]]}], 
+              SqrtBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+           RowBox[{"1", "+", "a"}]]], 
+         RowBox[{
+          SqrtBox[
+           RowBox[{"a", "+", 
+            RowBox[{"Cos", "[", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"EllipticF", "[", 
+                RowBox[{
+                 FractionBox["x_", "2"], ",", 
+                 FractionBox["2", 
+                  RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+               SqrtBox[
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                 RowBox[{"1", "+", "a_"}]]]}], 
+              SqrtBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}]], " ", 
+          SqrtBox[
+           RowBox[{"1", "-", 
+            FractionBox[
+             RowBox[{"2", " ", 
+              SuperscriptBox[
+               RowBox[{"Sin", "[", 
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"EllipticF", "[", 
+                   RowBox[{
+                    FractionBox["x_", "2"], ",", 
+                    FractionBox["2", 
+                    RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+                  SqrtBox[
+                   FractionBox[
+                    RowBox[{
+                    RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                    RowBox[{"1", "+", "a_"}]]]}], 
+                 SqrtBox[
+                  RowBox[{
+                   RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}], 
+               "2"]}], 
+             RowBox[{"1", "+", "a"}]]}]]}]], "-", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"EllipticF", "[", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              RowBox[{"EllipticF", "[", 
+               RowBox[{
+                FractionBox["x_", "2"], ",", 
+                FractionBox["2", 
+                 RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+              SqrtBox[
+               FractionBox[
+                RowBox[{
+                 RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                RowBox[{"1", "+", "a_"}]]]}], 
+             SqrtBox[
+              RowBox[{
+               RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], ",", 
+            FractionBox["2", 
+             RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+          RowBox[{"Sin", "[", 
+           FractionBox[
+            RowBox[{"2", " ", 
+             RowBox[{"EllipticF", "[", 
+              RowBox[{
+               FractionBox["x_", "2"], ",", 
+               FractionBox["2", 
+                RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+             SqrtBox[
+              FractionBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+               RowBox[{"1", "+", "a_"}]]]}], 
+            SqrtBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", "a"}], ")"}], " ", 
+          SqrtBox[
+           RowBox[{"a", "+", 
+            RowBox[{"Cos", "[", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"EllipticF", "[", 
+                RowBox[{
+                 FractionBox["x_", "2"], ",", 
+                 FractionBox["2", 
+                  RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+               SqrtBox[
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                 RowBox[{"1", "+", "a_"}]]]}], 
+              SqrtBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}]], " ", 
+          SqrtBox[
+           FractionBox[
+            RowBox[{"a", "+", 
+             RowBox[{"Cos", "[", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"EllipticF", "[", 
+                 RowBox[{
+                  FractionBox["x_", "2"], ",", 
+                  FractionBox["2", 
+                   RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+                SqrtBox[
+                 FractionBox[
+                  RowBox[{
+                   RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                  RowBox[{"1", "+", "a_"}]]]}], 
+               SqrtBox[
+                RowBox[{
+                 RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+            RowBox[{"1", "+", "a"}]]]}]], "+", 
+        FractionBox[
+         RowBox[{
+          SqrtBox[
+           FractionBox[
+            RowBox[{"a", "+", 
+             RowBox[{"Cos", "[", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"EllipticF", "[", 
+                 RowBox[{
+                  FractionBox["x_", "2"], ",", 
+                  FractionBox["2", 
+                   RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+                SqrtBox[
+                 FractionBox[
+                  RowBox[{
+                   RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                  RowBox[{"1", "+", "a_"}]]]}], 
+               SqrtBox[
+                RowBox[{
+                 RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+            RowBox[{"1", "+", "a"}]]], " ", 
+          RowBox[{"EllipticF", "[", 
+           RowBox[{
+            FractionBox[
+             RowBox[{
+              RowBox[{"EllipticF", "[", 
+               RowBox[{
+                FractionBox["x_", "2"], ",", 
+                FractionBox["2", 
+                 RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+              SqrtBox[
+               FractionBox[
+                RowBox[{
+                 RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                RowBox[{"1", "+", "a_"}]]]}], 
+             SqrtBox[
+              RowBox[{
+               RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], ",", 
+            FractionBox["2", 
+             RowBox[{"1", "+", "a"}]]}], "]"}], " ", 
+          RowBox[{"Sin", "[", 
+           FractionBox[
+            RowBox[{"2", " ", 
+             RowBox[{"EllipticF", "[", 
+              RowBox[{
+               FractionBox["x_", "2"], ",", 
+               FractionBox["2", 
+                RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+             SqrtBox[
+              FractionBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+               RowBox[{"1", "+", "a_"}]]]}], 
+            SqrtBox[
+             RowBox[{
+              RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"a", "+", 
+            RowBox[{"Cos", "[", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"EllipticF", "[", 
+                RowBox[{
+                 FractionBox["x_", "2"], ",", 
+                 FractionBox["2", 
+                  RowBox[{"1", "+", "a_"}]]}], "]"}], " ", 
+               SqrtBox[
+                FractionBox[
+                 RowBox[{
+                  RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}], 
+                 RowBox[{"1", "+", "a_"}]]]}], 
+              SqrtBox[
+               RowBox[{
+                RowBox[{"Cos", "[", "x_", "]"}], "+", "a_"}]]], "]"}]}], 
+           ")"}], 
+          RowBox[{"3", "/", "2"}]]]}], ")"}]}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", 
+       RowBox[{"-", "8"}], ",", " ", "8"}], "}"}]}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", " ", 
+     RowBox[{"-", "8"}], ",", " ", "8"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8797682641172037`*^9, 3.8797683265098886`*^9}, 
+   3.879768420776672*^9, {3.879768471751643*^9, 3.879768695536417*^9}},
+ CellLabel->"In[62]:=",ExpressionUUID->"dbcc1d7c-ff52-42d6-8174-ed19bb2db6ea"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  TagBox[
+   StyleBox[
+    DynamicModuleBox[{$CellContext`a$$ = 7.76, Typeset`show$$ = True, 
+     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+     "\"untitled\"", Typeset`specs$$ = {{
+       Hold[$CellContext`a$$], -8, 8}}, Typeset`size$$ = {
+     360., {109., 113.87420196121224`}}, Typeset`update$$ = 0, 
+     Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+     DynamicBox[Manipulate`ManipulateBoxes[
+      1, StandardForm, "Variables" :> {$CellContext`a$$ = -8}, 
+       "ControllerVariables" :> {}, 
+       "OtherVariables" :> {
+        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+         Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+         Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> 
+       Plot[1/(Sqrt[($CellContext`a$$ + 
+             Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]]])])/(1 + $CellContext`a$$)]/(
+          Sqrt[$CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]/Sqrt[Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]]])]] 
+          Sqrt[1 - 2 (Sin[EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])] (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]]])]^2/(1 + $CellContext`a$$))]) - 
+         EllipticF[EllipticF[Pattern[$CellContext`x, 
+               Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+               Blank[]])] (Sqrt[(Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                Blank[]])]/Sqrt[Cos[
+               Pattern[$CellContext`x, 
+                Blank[]]] + Pattern[$CellContext`a$$, 
+               Blank[]]]), 2/(1 + $CellContext`a$$)] (
+          Sin[(2 EllipticF[Pattern[$CellContext`x, 
+                 Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])]) (Sqrt[(Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])]/Sqrt[Cos[
+                Pattern[$CellContext`x, 
+                 Blank[]]] + Pattern[$CellContext`a$$, 
+                Blank[]]])]/(((1 + $CellContext`a$$) 
+           Sqrt[$CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]]])]]) 
+          Sqrt[($CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]]])])/(1 + $CellContext`a$$)])) + (
+           Sqrt[($CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]]])])/(1 + $CellContext`a$$)] 
+           EllipticF[EllipticF[Pattern[$CellContext`x, 
+                 Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])] (Sqrt[(Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]/Sqrt[Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]]]), 2/(1 + $CellContext`a$$)]) (
+           Sin[(2 EllipticF[Pattern[$CellContext`x, 
+                  Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]) (Sqrt[(Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]/Sqrt[Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]]])]/($CellContext`a$$ + 
+            Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]/Sqrt[Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]]])])^(3/2))), {$CellContext`x, -8, 8}], 
+       "Specifications" :> {{$CellContext`a$$, -8, 8}}, "Options" :> {}, 
+       "DefaultOptions" :> {}],
+      ImageSizeCache->{406., {153.1875, 158.8125}},
+      SingleEvaluation->True],
+     Deinitialization:>None,
+     DynamicModuleValues:>{},
+     SynchronousInitialization->True,
+     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+     UnsavedVariables:>{Typeset`initDone$$},
+     UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+    Deployed->True,
+    StripOnInput->False],
+   Manipulate`InterpretManipulate[1]], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"y", "''"}], "[", "t", "]"}], " ", "+", " ", 
+       RowBox[{"250", "*", 
+        RowBox[{"y", " ", "[", "t", "]"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"250", "*", 
+          RowBox[{
+           RowBox[{"y", "[", "t", "]"}], "^", "3"}]}], " ", ")"}], "/", " ", 
+        "3"}]}], " ", "==", "0"}], ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"y", "'"}], "[", "0", "]"}], " ", "==", " ", "0"}], ",", " ", 
+     RowBox[{
+      RowBox[{"y", "[", "0", "]"}], " ", "==", " ", "0"}]}], "}"}], ",", " ", 
+   
+   RowBox[{"y", "[", "t", "]"}], ",", " ", "t"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.87976916566852*^9, 3.87976927272462*^9}, {
+  3.879769305441902*^9, 3.879769412895689*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"da67f010-4baf-4c3d-8a27-8510e913d496"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 7.76, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 7.76}, -8, 8}}, Typeset`size$$ = {
+    360., {109., 113.87420196121224`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = 7.76}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[1/(Sqrt[($CellContext`a$$ + 
+            Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]/Sqrt[Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]]])])/(1 + $CellContext`a$$)]/(
+         Sqrt[$CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                  Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]) (Sqrt[(Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]/Sqrt[Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]]])]] 
+         Sqrt[1 - 2 (Sin[EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])] (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]]])]^2/(1 + $CellContext`a$$))]) - 
+        EllipticF[EllipticF[Pattern[$CellContext`x, 
+              Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+              Blank[]])] (Sqrt[(Cos[
+                Pattern[$CellContext`x, 
+                 Blank[]]] + Pattern[$CellContext`a$$, 
+                Blank[]])/(1 + Pattern[$CellContext`a$$, 
+               Blank[]])]/Sqrt[Cos[
+              Pattern[$CellContext`x, 
+               Blank[]]] + Pattern[$CellContext`a$$, 
+              Blank[]]]), 2/(1 + $CellContext`a$$)] (
+         Sin[(2 EllipticF[Pattern[$CellContext`x, 
+                Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                Blank[]])]) (Sqrt[(Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                Blank[]])]/Sqrt[Cos[
+               Pattern[$CellContext`x, 
+                Blank[]]] + Pattern[$CellContext`a$$, 
+               Blank[]]])]/(((1 + $CellContext`a$$) 
+          Sqrt[$CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]/Sqrt[Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]]])]]) 
+         Sqrt[($CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                   Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                   Blank[]])]/Sqrt[Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]]])])/(1 + $CellContext`a$$)])) + (
+          Sqrt[($CellContext`a$$ + Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                    Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]) (Sqrt[(Cos[
+                    Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                    Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                    Blank[]])]/Sqrt[Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]]])])/(1 + $CellContext`a$$)] 
+          EllipticF[EllipticF[Pattern[$CellContext`x, 
+                Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                Blank[]])] (Sqrt[(Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])]/Sqrt[Cos[
+                Pattern[$CellContext`x, 
+                 Blank[]]] + Pattern[$CellContext`a$$, 
+                Blank[]]]), 2/(1 + $CellContext`a$$)]) (
+          Sin[(2 EllipticF[Pattern[$CellContext`x, 
+                 Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])]) (Sqrt[(Cos[
+                  Pattern[$CellContext`x, 
+                   Blank[]]] + Pattern[$CellContext`a$$, 
+                  Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                 Blank[]])]/Sqrt[Cos[
+                Pattern[$CellContext`x, 
+                 Blank[]]] + Pattern[$CellContext`a$$, 
+                Blank[]]])]/($CellContext`a$$ + 
+           Cos[(2 EllipticF[Pattern[$CellContext`x, 
+                  Blank[]]/2, 2/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]) (Sqrt[(Cos[
+                   Pattern[$CellContext`x, 
+                    Blank[]]] + Pattern[$CellContext`a$$, 
+                   Blank[]])/(1 + Pattern[$CellContext`a$$, 
+                  Blank[]])]/Sqrt[Cos[
+                 Pattern[$CellContext`x, 
+                  Blank[]]] + Pattern[$CellContext`a$$, 
+                 Blank[]]])])^(3/2))), {$CellContext`x, -8, 8}], 
+      "Specifications" :> {{{$CellContext`a$$, 7.76}, -8, 8}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {153.1875, 158.8125}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.87976927563583*^9, 3.879769309041629*^9, {3.87976934350563*^9, 
+   3.879769413192046*^9}},
+ CellLabel->"Out[81]=",ExpressionUUID->"f724694b-e4b0-4044-9957-b8a8f41a0f79"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DSolve", "bvimp", 
+   "\"General solution contains implicit solutions. In the boundary value \
+problem, these solutions will be ignored, so some of the solutions will be \
+lost.\"", 2, 82, 23, 32021291406275256958, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.879769344366626*^9, 3.879769413832838*^9}},
+ CellLabel->
+  "During evaluation of \
+In[81]:=",ExpressionUUID->"25e8c758-a320-459a-a57c-4cafc3b119ec"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.87976927563583*^9, 3.879769309041629*^9, {3.87976934350563*^9, 
+   3.879769413839344*^9}},
+ CellLabel->"Out[82]=",ExpressionUUID->"34fc27a4-24c8-4a01-ae19-fddb6fba4e7a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"x", "^", "2"}], " ", "-", " ", "a"}], ")"}]}], ",", "x"}], 
+  "]"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"12d0b3bb-dde3-488c-b976-b7f3d436327c"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"ArcTanh", "[", 
+    FractionBox["x", 
+     SqrtBox["a"]], "]"}], 
+   SqrtBox["a"]]}]], "Output",
+ CellChangeTimes->{3.879789346321362*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"d299846f-585e-4374-bdd5-2e5b724c2ecd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"ArcTanh", "[", 
+        FractionBox["x", 
+         SqrtBox["a"]], "]"}], 
+       SqrtBox["a"]]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "8"}], ",", "8"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", 
+     RowBox[{"-", "8"}], ",", "8"}], "}"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[4]:=",ExpressionUUID->"60f12558-1a09-408a-a87d-5b88899871c6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = -8, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], -8, 8}}, Typeset`size$$ = {
+    360., {109., 113.87420196121221`}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = -8}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[-(ArcTanh[$CellContext`x/Sqrt[$CellContext`a$$]]/
+         Sqrt[$CellContext`a$$]), {$CellContext`x, -8, 8}], 
+      "Specifications" :> {{$CellContext`a$$, -8, 8}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{406., {153.1875, 158.8125}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.879789350564871*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"166143bd-a86a-44d4-8839-a2cb6fe6aa54"]
+}, Open  ]]
+},
+WindowSize->{1566, 1032},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"10d362da-d444-4a02-82af-2cc28f302cc1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 641, 14, 68, "Input",ExpressionUUID->"174e4d0f-b3aa-4bab-a5be-7ac7b2629318"],
+Cell[1224, 38, 528, 17, 67, "Output",ExpressionUUID->"b7d392f6-8db3-44fa-8dd6-245e99d808a1"]
+}, Open  ]],
+Cell[1767, 58, 848, 27, 84, "Input",ExpressionUUID->"ffdb8280-2dc7-4a93-9ad2-c68b6ab3033e"],
+Cell[2618, 87, 1886, 38, 362, "Input",ExpressionUUID->"e7ced377-a4e2-47e1-97db-d848be55a142"],
+Cell[4507, 127, 214, 3, 29, "Input",ExpressionUUID->"867756fe-b3ec-4dda-b8d5-dadaf5bb4ccd"],
+Cell[4724, 132, 693, 22, 68, "Input",ExpressionUUID->"b9bfecc4-f039-4bd2-8fb7-0b728c07068a"],
+Cell[5420, 156, 490, 11, 46, "Input",ExpressionUUID->"a44989af-0035-4e36-b485-64cc194d179c"],
+Cell[CellGroupData[{
+Cell[5935, 171, 3525, 120, 177, "Input",ExpressionUUID->"62605d4d-4722-4c89-a706-6857dd2d2cd4"],
+Cell[9463, 293, 1737, 59, 86, "Output",ExpressionUUID->"f44705b7-db7b-492f-b076-88be18c412e3"]
+}, Open  ]],
+Cell[11215, 355, 152, 3, 29, "Input",ExpressionUUID->"c07daab3-0890-45b3-9a3b-276ede164080"],
+Cell[CellGroupData[{
+Cell[11392, 362, 426, 8, 29, "Input",ExpressionUUID->"1ceb664b-846c-46d4-8bb1-9b467f314999"],
+Cell[11821, 372, 7272, 223, 277, "Output",ExpressionUUID->"5a1a56c5-d14c-4d43-9c33-aa21c6408a04"]
+}, Open  ]],
+Cell[19108, 598, 8556, 235, 416, "Input",ExpressionUUID->"dbcc1d7c-ff52-42d6-8174-ed19bb2db6ea"],
+Cell[CellGroupData[{
+Cell[27689, 837, 8293, 169, 398, "Input",ExpressionUUID->"da67f010-4baf-4c3d-8a27-8510e913d496"],
+Cell[35985, 1008, 7409, 145, 331, "Output",ExpressionUUID->"f724694b-e4b0-4044-9957-b8a8f41a0f79"],
+Cell[43397, 1155, 468, 10, 28, "Message",ExpressionUUID->"25e8c758-a320-459a-a57c-4cafc3b119ec"],
+Cell[43868, 1167, 239, 5, 33, "Output",ExpressionUUID->"34fc27a4-24c8-4a01-ae19-fddb6fba4e7a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44144, 1177, 278, 8, 46, "Input",ExpressionUUID->"12d0b3bb-dde3-488c-b976-b7f3d436327c"],
+Cell[44425, 1187, 272, 8, 63, "Output",ExpressionUUID->"d299846f-585e-4374-bdd5-2e5b724c2ecd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44734, 1200, 556, 18, 77, "Input",ExpressionUUID->"60f12558-1a09-408a-a87d-5b88899871c6"],
+Cell[45293, 1220, 1666, 34, 354, "Output",ExpressionUUID->"166143bd-a86a-44d4-8839-a2cb6fe6aa54"]
+}, Open  ]]
+}
+]
+*)
+
